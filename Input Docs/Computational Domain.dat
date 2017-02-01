@@ -1,0 +1,40 @@
+Define deinsity parameter=h (distance between any two vertices of an element in the mesh will not exceed h). 
+The closed boundary of the computational domain (specified by a decimal values seperated by one space), and the dimension of the
+computational domain must be defined.
+Define number of quadrature points to be used during numerical integration.
+Specify symmetric property of bilinear form  ( 'y' / 'n').
+Specify whether exact/analytic solution is provided  ( 'y' / 'n').
+Specify hp-mesh refinement ( 'y' / 'n').
+Specify type of boundary conditions  ( 'y' / 'n').
+
+dim=1
+density_param=0.25
+basis_function_degree=1
+Quadrature Points per Element=10
+symmetric_bilinear_form=y
+analytic_solution=y
+
+MESH REFINEMENT (specify weather the mesh is to be iteratively refined via h-p refinement)
+hp_Mesh_Refinement=y
+ 
+BOUNDARY
+0.0 1.0
+
+BC'S
+homogeneous dirichlet = n
+nonhomogeneous dirichlet = y
+
+
+PDE Definition/Information
+a(x)=
+b(x)=
+c(x)=
+b'(x)=
+f(x)=
+analytic_solution(x)=
+g(x)=
+
+
+
+
+
